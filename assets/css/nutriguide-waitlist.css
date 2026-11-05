@@ -1,0 +1,36 @@
+/* Page-specific additions: original NutriSeeds global styles stay unchanged. */
+.ng-top-cta { margin: 16px 0 0 18px; vertical-align: middle; }
+.ng-waitlist { scroll-margin-top: 110px; }
+.ng-waitlist-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: start; gap: clamp(26px, 5vw, 76px); }
+.ng-waitlist-story { padding: 28px 0; }
+.ng-waitlist-story h2 { margin: 16px 0 20px; }
+.ng-waitlist-story p { max-width: 480px; font-size: 14px; line-height: 1.9; }
+.ng-waitlist-badge { display: inline-flex; margin: 12px 0 22px; background: #e6efe2; border: 1px solid #c8ddc7; color: #214f36; border-radius: 100px; padding: 9px 14px; font-weight: 800; font-size: 11px; }
+.ng-points { display: grid; gap: 12px; padding: 0; margin: 0 0 26px; list-style: none; }
+.ng-points li { display: flex; align-items: flex-start; gap: 12px; font-size: 12px; line-height: 1.65; color: #486451; }
+.ng-points li::before { content: '✓'; flex: none; display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: #dbe9d9; color: #214f36; font-weight: 800; }
+.ng-wa { margin-top: 6px; }
+.ng-waitlist-card { padding: clamp(24px, 4vw, 42px); }
+.ng-waitlist-card h3 { margin: 0 0 6px; }
+.ng-form-intro { font-size: 12px; line-height: 1.8; margin-bottom: 25px; }
+.ng-waitlist-form { display: grid; gap: 19px; }
+.ng-waitlist-form .field { font-size: 12px; }
+.ng-waitlist-form .field select { cursor: pointer; }
+.ng-waitlist-form .field span { color: #8a553f; }
+.ng-waitlist-form .check-field { font-size: 12px; }
+.ng-waitlist-form .check-field input { width: 17px; height: 17px; flex: none; }
+.ng-waitlist-form .btn { width: 100%; }
+.ng-waitlist-help { color: #718477; font-size: 11px; line-height: 1.75; margin: 0; }
+.ng-feedback { padding: 12px 15px; border-radius: 10px; border: 1px solid transparent; font-size: 12px; line-height: 1.7; }
+.ng-feedback[data-type='error'] { color: #8d2e2b; border-color: #e8b7b5; background: #fff1f0; }
+.ng-feedback[data-type='success'] { color: #145d39; border-color: #bddbc4; background: #eaf6ed; }
+.ng-feedback[hidden] { display: none; }
+@media (max-width: 800px) {
+  .ng-waitlist-grid { grid-template-columns: 1fr; gap: 12px; }
+  .ng-waitlist-story { padding: 0 0 10px; }
+}
+@media (max-width: 520px) {
+  .ng-top-cta { display: flex; width: fit-content; margin: 16px 0 0; }
+  .ng-waitlist-card { padding: 22px; }
+  .ng-waitlist-story h2 { font-size: 2.15rem; }
+}
