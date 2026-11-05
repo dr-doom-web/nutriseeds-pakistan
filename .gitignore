@@ -1,0 +1,9 @@
+# Ignore duplicated nested directory for GitHub Pages root deployment
+nutriseeds-website/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/

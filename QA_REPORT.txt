@@ -1,0 +1,105 @@
+================================================================================
+NUTRISEEDS PAKISTAN — COMPREHENSIVE QA VERIFICATION REPORT
+================================================================================
+
+PROJECT: NutriSeeds Pakistan Interactive Website (Multimedia Midterm)
+EMAIL: ghulamujtabaedu@gmail.com
+WHATSAPP: 03297676956 (+923297676956)
+DATE: November 2026
+
+--------------------------------------------------------------------------------
+1. INTEGRATION & CONFIGURATION VERIFICATION
+--------------------------------------------------------------------------------
+[PASS] Business identity configured in assets/js/config.js:
+       - Business Name: NutriSeeds Pakistan
+       - Tagline: Small Seeds. Big Health.
+       - Primary Email: ghulamujtabaedu@gmail.com
+       - WhatsApp Number: 923297676956 (Pakistan format: 03297676956)
+       - WhatsApp URL: https://wa.me/923297676956
+       - Verified Order Endpoint: https://formspree.io/f/myeevbpw
+       - Verified Contact Endpoint: https://formspree.io/f/mzeewkvg
+[PASS] All 9 pages contain active WhatsApp buttons with prefilled messages:
+       - Homepage (Hero CTA + Inquiry card + Footer)
+       - Shop Seeds (Footer + Cart Drawer)
+       - Product Details (Dynamic pack-size and quantity prefilled message + Footer)
+       - Shopping Cart / Checkout (Option B Order via WhatsApp + Footer)
+       - Seed Finder (Footer + Drawer)
+       - Recipes (Footer + Drawer)
+       - NutriGuide (Footer + Drawer)
+       - Our Story / About (Footer + Drawer)
+       - Contact Us (Direct WhatsApp card + Footer)
+[PASS] Footer across all 9 pages displays real email and WhatsApp links.
+
+--------------------------------------------------------------------------------
+2. SHOPPING CART & MATHEMATICAL VERIFICATION
+--------------------------------------------------------------------------------
+[PASS] Pack size selection: 25g, 50g, 100g supported for all 4 products.
+[PASS] Pricing matrix validated:
+       - Chia Seeds: 25g (Rs. 75), 50g (Rs. 135), 100g (Rs. 250)
+       - Flax Seeds: 25g (Rs. 50), 50g (Rs. 85), 100g (Rs. 160)
+       - Pumpkin Seeds: 25g (Rs. 110), 50g (Rs. 195), 100g (Rs. 360)
+       - Sunflower Seeds: 25g (Rs. 70), 50g (Rs. 120), 100g (Rs. 220)
+[PASS] Demo Order calculation tested:
+       - Product 1: Chia Seeds (50g) x 2 = Rs. 270
+       - Product 2: Flax Seeds (25g) x 1 = Rs. 50
+       - Subtotal = Rs. 320 (Exact match)
+[PASS] Quantity controls: Steppers decrement to 1, then safely remove; maximum capped at 99.
+[PASS] State persistence: Preserved via localStorage ('nutriseeds-cart-v1') across page navigations.
+[PASS] Empty basket handling: Hides checkout form, displays informative empty state, prevents submission.
+
+--------------------------------------------------------------------------------
+3. ORDERING METHODS (DUAL CHANNELS)
+--------------------------------------------------------------------------------
+[PASS] Option A: Submit Order Request (Email via Formspree):
+       - Full validation for Name, Email, Phone, City, Address, and Consent.
+       - Disables submit button with "Sending..." state to prevent double-clicks.
+       - If Formspree endpoint is not yet configured: Displays informative message guiding
+         setup, preserves all inputs and cart items, and provides instant WhatsApp/email fallback.
+       - Does NOT simulate fake delivery alert.
+[PASS] Option B: Order via WhatsApp:
+       - Formats dynamic message containing Reference, Customer Name, Contact info,
+         Itemized products with pack sizes and quantities, Subtotal, Delivery disclaimer,
+         Estimated Total, Delivery location, and Additional notes.
+       - Encodes safely with encodeURIComponent().
+       - Opens https://wa.me/923297676956?text=...
+       - Informs user to press "Send" in WhatsApp without falsely claiming "Order Sent".
+       - Preserves cart items.
+
+--------------------------------------------------------------------------------
+4. CONTACT US FORM VERIFICATION
+--------------------------------------------------------------------------------
+[PASS] Form fields: Full Name (required), Email (required), Phone (optional),
+       Subject (required), Message (required), Consent (required).
+[PASS] Confirmed backend acceptance feedback matches requested string:
+       "Thank you for contacting NutriSeeds Pakistan! Your message has been received. Our team will respond as soon as possible."
+[PASS] Direct contact alternatives provided: mailto:ghulamujtabaedu@gmail.com and WhatsApp 03297676956.
+
+--------------------------------------------------------------------------------
+5. FAILURE & EDGE CASE TESTS
+--------------------------------------------------------------------------------
+[PASS] Empty Cart Checkout: Blocked with user feedback.
+[PASS] Missing Required Fields: HTML5 validation triggers native hints and blocks request.
+[PASS] Network Failure Simulation: Handled gracefully with retry guidance and offline contact.
+[PASS] Rapid Double-Click: Prevented via button disabling.
+[PASS] Page Reload: Cart data safely reloaded from localStorage.
+[PASS] Unconfigured Formspree Endpoint: Handled cleanly without silent failure or fake success.
+
+--------------------------------------------------------------------------------
+6. RESPONSIVE DESIGN & ACCESSIBILITY
+--------------------------------------------------------------------------------
+[PASS] Screen width breakpoints tested:
+       - 375px (Mobile Portrait): Single-column cards, hamburger navigation, 44px+ tap targets.
+       - 430px (Large Mobile): Clean typography, no horizontal scrolling.
+       - 768px (Tablet): 2-column product grid, responsive header.
+       - 1366px (Laptop): Full desktop navigation, 4-column product grid, sticky aside summary.
+       - 1920px (Desktop): Centered 1216px container, sharp SVG rendering.
+[PASS] Keyboard accessibility: Escape closes drawer, Tab focus-trap inside drawer, visible focus outlines.
+
+--------------------------------------------------------------------------------
+7. GITHUB PAGES READINESS
+--------------------------------------------------------------------------------
+[PASS] All asset references are relative (assets/css/..., assets/js/..., assets/images/...).
+[PASS] Top-level files synchronized in repository root: index.html is entry point.
+[PASS] Zero build tools or Node runtime required for static hosting.
+[PASS] No private API keys or email credentials exposed in client-side code.
+================================================================================

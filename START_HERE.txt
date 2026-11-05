@@ -1,0 +1,13 @@
+NUTRISEEDS PAKISTAN - WEBSITE FILES
+
+1) Open index.html with a local server or an IDE preview.
+2) The HTML/CSS/JS shopping features are implemented already.
+3) BEFORE THE TEACHER TESTS FORMS, connect the real order/contact Formspree
+   form endpoints and WhatsApp Business number inside assets/js/config.js.
+4) Confirm messages actually arrive in your group inbox/WhatsApp.
+5) Publish the entire website folder through GitHub Pages.
+6) Read README.md for exact setup instructions and EXAM_REVISION.md for
+   consistent presentation and written exam explanations.
+
+NO LIVE BUSINESS CLAIMS: Products/prices are examples, NutriGuide is planned,
+food registration and suppliers are not verified, and no payment is collected.
