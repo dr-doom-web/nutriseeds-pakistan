@@ -19,3 +19,29 @@
 .order-method-box.wa-box h4{color:#166138}
 .order-method-box p{font-size:11px;line-height:1.6;margin:0;color:var(--muted)}
 @media(max-width:680px){.order-methods-grid{grid-template-columns:1fr}}
+
+/* --- FLOATING WHATSAPP BUTTON (TASK 4) --- */
+.floating-whatsapp-container{position:fixed;bottom:24px;right:24px;z-index:90;display:flex;align-items:center;justify-content:flex-end}
+.floating-whatsapp-btn{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;box-shadow:0 8px 24px rgba(20,95,48,.32);text-decoration:none;position:relative;transition:transform .22s cubic-bezier(.2,.8,.2,1),box-shadow .22s ease,background .22s ease}
+.floating-whatsapp-btn:hover{transform:scale(1.08) translateY(-2px);background:#20ba59;box-shadow:0 12px 30px rgba(20,95,48,.45)}
+.floating-whatsapp-btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.floating-whatsapp-btn svg{width:30px;height:30px;fill:#fff;display:block}
+.floating-whatsapp-tooltip{position:absolute;right:68px;background:var(--ink);color:#fff;font-family:Inter,Arial,sans-serif;font-size:11px;font-weight:750;letter-spacing:.02em;padding:7px 14px;border-radius:8px;white-space:nowrap;box-shadow:0 6px 18px rgba(0,0,0,.22);pointer-events:none;opacity:0;transform:translateX(8px);transition:opacity .2s ease,transform .2s ease}
+.floating-whatsapp-tooltip::after{content:"";position:absolute;top:50%;right:-6px;transform:translateY(-50%);border-width:5px 0 5px 6px;border-style:solid;border-color:transparent transparent transparent var(--ink)}
+.floating-whatsapp-btn:hover .floating-whatsapp-tooltip,.floating-whatsapp-btn:focus-visible .floating-whatsapp-tooltip{opacity:1;transform:translateX(0)}
+
+@media(max-width:600px){
+  .floating-whatsapp-container{bottom:max(16px,env(safe-area-inset-bottom,16px));right:max(16px,env(safe-area-inset-right,16px))}
+  .floating-whatsapp-btn{width:50px;height:50px}
+  .floating-whatsapp-btn svg{width:26px;height:26px}
+  .floating-whatsapp-tooltip{display:none}
+}
+
+/* --- PRODUCT BADGES & COMING SOON STYLES --- */
+.small-badge.badge-soon{background:#faeccb;color:#6b4f17;border:1px solid #ebd298}
+.coming-soon-label{font-size:11px;font-weight:800;color:#916823;background:#fbf3dc;padding:6px 10px;border-radius:8px;border:1px solid #eddcb2}
+.single-variant-tag{font-size:11px;font-weight:750;color:var(--forest);background:#eef5eb;padding:7px 10px;border-radius:8px;border:1px solid #d4e5d0}
+.coming-soon-box{background:#fdfcf8;border:1px solid #eadfc6;border-radius:18px;padding:22px;margin:18px 0 24px}
+.coming-soon-box .badge-soon{display:inline-block;padding:6px 14px;border-radius:100px;font-size:11px;font-weight:800}
+.btn-disabled{background:#e8ece5;color:#859689;border:1px solid #d2ded0;cursor:not-allowed}
+

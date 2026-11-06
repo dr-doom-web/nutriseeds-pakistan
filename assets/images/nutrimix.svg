@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="680" viewBox="0 0 760 680" role="img" aria-labelledby="t">
+  <title id="t">NutriSeeds NutriMix four-seed blend packet illustration</title>
+  <defs>
+    <linearGradient id="bag" x1="0" x2="1"><stop stop-color="#fffef6"/><stop offset=".5" stop-color="#f4eedf"/><stop offset="1" stop-color="#e8dbc6"/></linearGradient>
+    <linearGradient id="rim" x1="0" x2="1"><stop stop-color="#fdfcf8"/><stop offset=".5" stop-color="#c9d7c6"/><stop offset="1" stop-color="#f6f9f3"/></linearGradient>
+    <linearGradient id="bowl" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f8fcfa" stop-opacity=".85"/><stop offset="1" stop-color="#b6cbb7" stop-opacity=".95"/></linearGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="200%" height="200%"><feGaussianBlur stdDeviation="16"/></filter>
+    <clipPath id="win"><ellipse cx="327" cy="485" rx="105" ry="52"/></clipPath>
+    <clipPath id="bowlClip"><ellipse cx="528" cy="515" rx="114" ry="43"/></clipPath>
+    <pattern id="blendPattern" width="36" height="30" patternUnits="userSpaceOnUse">
+      <!-- Chia -->
+      <ellipse cx="6" cy="7" rx="3.5" ry="1.8" fill="#303533" transform="rotate(20 6 7)"/>
+      <ellipse cx="28" cy="22" rx="3" ry="1.6" fill="#303533" transform="rotate(-30 28 22)"/>
+      <!-- Flax -->
+      <ellipse cx="18" cy="8" rx="5.2" ry="2.6" fill="#7d5939" transform="rotate(45 18 8)"/>
+      <ellipse cx="8" cy="24" rx="5" ry="2.5" fill="#885e3d" transform="rotate(-15 8 24)"/>
+      <!-- Pumpkin -->
+      <ellipse cx="27" cy="12" rx="7.5" ry="3.8" fill="#4d6f46" transform="rotate(-35 27 12)"/>
+      <!-- Sunflower -->
+      <ellipse cx="17" cy="20" rx="6.5" ry="2.8" fill="#b99e69" transform="rotate(30 17 20)"/>
+    </pattern>
+  </defs>
+  <ellipse cx="381" cy="615" rx="278" ry="36" fill="#4d493c" opacity=".13" filter="url(#shadow)"/>
+  <g transform="rotate(-5 323 334)">
+    <rect x="172" y="91" width="322" height="501" rx="23" fill="#897c67" opacity=".18" transform="translate(12 9)"/>
+    <rect x="172" y="91" width="322" height="501" rx="21" fill="url(#bag)" stroke="#d8cfbd" stroke-width="3"/>
+    <rect x="178" y="105" width="309" height="14" rx="5" fill="#e8ddc7"/>
+    <path d="M190 142 H477" stroke="#d3c6b2" stroke-width="2"/>
+    <rect x="193" y="159" width="280" height="399" rx="9" fill="#246b45" opacity=".12"/>
+    <circle cx="331" cy="224" r="39" fill="#246b45" opacity=".16"/>
+    <path d="M326 237C307 229 310 208 318 201C330 210 334 222 326 237Z" fill="#1b452e"/>
+    <path d="M337 236C339 220 351 212 362 213C358 229 349 237 337 236Z" fill="#d9a64b"/>
+    <path d="M331 245V224" stroke="#1b452e" stroke-width="4" stroke-linecap="round"/>
+    <text x="331" y="286" font-family="Manrope, Arial, sans-serif" font-weight="700" font-size="27" text-anchor="middle" letter-spacing="-1" fill="#1b452e">nutriseeds</text>
+    <text x="331" y="307" font-family="Inter, Arial, sans-serif" font-size="12" text-anchor="middle" letter-spacing="3" fill="#1b452e">PAKISTAN</text>
+    <path d="M224 327H438" stroke="#246b45" opacity=".6"/>
+    <text x="331" y="366" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="38" text-anchor="middle" letter-spacing="1" fill="#1b452e">NUTRIMIX</text>
+    <text x="331" y="398" font-family="Inter, Arial, sans-serif" font-size="14" text-anchor="middle" letter-spacing="3" fill="#4d6f46">FOUR-SEED BLEND</text>
+    <ellipse cx="327" cy="485" rx="112" ry="60" fill="#e8eee3" stroke="#fffdf5" stroke-width="10"/>
+    <g clip-path="url(#win)">
+      <rect x="210" y="420" width="240" height="130" fill="#e4ebd9"/>
+      <rect x="210" y="420" width="240" height="130" fill="url(#blendPattern)"/>
+    </g>
+    <ellipse cx="327" cy="485" rx="105" ry="52" fill="none" stroke="#bed2ba" stroke-width="3"/>
+  </g>
+  <g id="bowl-group">
+    <ellipse cx="528" cy="515" rx="124" ry="49" fill="#3a372d" opacity=".22" filter="url(#shadow)"/>
+    <ellipse cx="528" cy="515" rx="119" ry="45" fill="url(#bowl)" stroke="url(#rim)" stroke-width="6"/>
+    <g clip-path="url(#bowlClip)">
+      <rect x="400" y="460" width="260" height="110" fill="#dce6d6"/>
+      <rect x="400" y="460" width="260" height="110" fill="url(#blendPattern)"/>
+      <ellipse cx="530" cy="515" rx="85" ry="25" fill="#fff" opacity=".18"/>
+    </g>
+    <ellipse cx="528" cy="515" rx="119" ry="45" fill="none" stroke="#f6faf2" stroke-width="5"/>
+  </g>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="680" viewBox="0 0 760 680" role="img" aria-labelledby="t">
+  <title id="t">NutriSeeds sunflower cooking oil bottle illustration (Coming Soon concept)</title>
+  <defs>
+    <linearGradient id="glass" x1="0" x2="1"><stop stop-color="#ffffff" stop-opacity=".7"/><stop offset=".1" stop-color="#eaf3ee" stop-opacity=".4"/><stop offset=".8" stop-color="#cfe0d6" stop-opacity=".5"/><stop offset="1" stop-color="#ffffff" stop-opacity=".8"/></linearGradient>
+    <linearGradient id="oil" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fed658"/><stop offset=".5" stop-color="#f8be22"/><stop offset="1" stop-color="#e6a70e"/></linearGradient>
+    <linearGradient id="cap" x1="0" x2="1"><stop stop-color="#2c6946"/><stop offset=".5" stop-color="#1d4830"/><stop offset="1" stop-color="#143423"/></linearGradient>
+    <linearGradient id="labelBg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf7"/><stop offset="1" stop-color="#f7eedc"/></linearGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="200%" height="200%"><feGaussianBlur stdDeviation="16"/></filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="380" cy="620" rx="210" ry="32" fill="#4d493c" opacity=".16" filter="url(#shadow)"/>
+
+  <!-- Oil Bottle Illustration -->
+  <g id="bottle-group" transform="translate(235, 70)">
+    <!-- Bottle Outer Glass Silhouette -->
+    <!-- Cap -->
+    <rect x="110" y="0" width="70" height="42" rx="6" fill="url(#cap)" stroke="#163925" stroke-width="2"/>
+    <rect x="106" y="38" width="78" height="12" rx="3" fill="#327c52"/>
+    
+    <!-- Bottle Neck -->
+    <path d="M120 48 L120 130 C120 170, 40 215, 30 260 L30 515 C30 535, 45 545, 75 545 L215 545 C245 545, 260 535, 260 515 L260 260 C250 215, 170 170, 170 130 L170 48 Z" fill="#d8e8dc" opacity=".35" stroke="#b2cebc" stroke-width="3"/>
+    
+    <!-- Liquid Oil Fill -->
+    <path d="M125 150 C125 180, 46 225, 38 270 L38 510 C38 528, 52 538, 80 538 L210 538 C238 538, 252 528, 252 510 L252 270 C244 225, 165 180, 165 150 Z" fill="url(#oil)"/>
+    <ellipse cx="145" cy="152" rx="20" ry="6" fill="#ffe992"/>
+
+    <!-- Glass Highlights -->
+    <path d="M48 275 L48 515" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity=".5"/>
+    <path d="M62 265 L62 525" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity=".4"/>
+
+    <!-- Paper Label on Bottle -->
+    <g id="bottle-label">
+      <rect x="52" y="270" width="186" height="210" rx="14" fill="url(#labelBg)" stroke="#d9cbaf" stroke-width="2" filter="url(#softGlow)"/>
+      <rect x="60" y="278" width="170" height="194" rx="10" fill="none" stroke="#246b45" stroke-width="1.5" opacity=".5"/>
+      
+      <!-- NutriSeeds Logo Mark -->
+      <circle cx="145" cy="312" r="17" fill="#246b45" opacity=".15"/>
+      <path d="M141 320C130 315 132 301 137 296C144 303 146 311 141 320Z" fill="#1b452e"/>
+      <path d="M149 319C150 308 157 302 164 303C161 313 155 320 149 319Z" fill="#d9a64b"/>
+      
+      <text x="145" y="344" font-family="Manrope, Arial, sans-serif" font-weight="700" font-size="16" text-anchor="middle" letter-spacing="-0.5" fill="#1b452e">nutriseeds</text>
+      <text x="145" y="357" font-family="Inter, Arial, sans-serif" font-size="8" text-anchor="middle" letter-spacing="2" fill="#1b452e">PAKISTAN</text>
+      
+      <line x1="75" y1="367" x2="215" y2="367" stroke="#d9a64b" stroke-width="1.5"/>
+      
+      <text x="145" y="388" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="16" text-anchor="middle" fill="#1b452e">SUNFLOWER</text>
+      <text x="145" y="405" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="13" text-anchor="middle" fill="#1b452e">COOKING OIL</text>
+      <text x="145" y="422" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="8.5" text-anchor="middle" letter-spacing="1" fill="#7d6a45">PLANNED PRODUCT</text>
+
+      <!-- Sub details -->
+      <rect x="75" y="435" width="140" height="24" rx="6" fill="#edf4ee"/>
+      <text x="145" y="451" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="9" text-anchor="middle" fill="#246b45">High Smoke Point</text>
+    </g>
+
+    <!-- Glass Refraction Overlay -->
+    <path d="M120 48 L120 130 C120 170, 40 215, 30 260 L30 515 C30 535, 45 545, 75 545 L215 545 C245 545, 260 535, 260 515 L260 260 C250 215, 170 170, 170 130 L170 48 Z" fill="url(#glass)"/>
+  </g>
+
+  <!-- Big Coming Soon Ribbon Badge -->
+  <g transform="translate(380, 220) rotate(-12)" filter="url(#shadow)">
+    <rect x="-140" y="-24" width="280" height="48" rx="24" fill="#d9a64b" stroke="#ffffff" stroke-width="3"/>
+    <text x="0" y="7" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="17" text-anchor="middle" letter-spacing="2" fill="#26332d">COMING SOON</text>
+  </g>
+</svg>
