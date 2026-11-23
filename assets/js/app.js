@@ -13,7 +13,7 @@ const $$ = (s, root = document) => Array.from(root.querySelectorAll(s));
 const byId = id => products.find(p => p.id === id);
 const money = n => 'Rs. ' + Number(n || 0).toLocaleString('en-PK');
 const clean = s => String(s || '').replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
-const img = p => `assets/images/${p.id}.svg`;
+const img = p => `assets/images/${p.id}.jpg`;
 const endpointValid = s => /^https:\/\/formspree\.io\/f\/[A-Za-z0-9]+\/?$/.test(String(s || '').trim());
 const numberValid = s => /^\d{10,15}$/.test(String(s || '').trim());
 const key = (id, size) => `${id}:${size}`;
@@ -161,7 +161,7 @@ function card(p) {
   return `<article class="product-card ${p.isComingSoon ? 'is-coming-soon' : ''}">
     <a class="product-media" style="--tile:${p.tile}" href="product.html?id=${p.id}">
       ${badge}
-      <img src="${img(p)}" loading="lazy" alt="Illustrated NutriSeeds ${clean(p.name)}">
+      <img src="${img(p)}" loading="lazy" alt="NutriSeeds ${clean(p.name)}">
     </a>
     <div class="product-content">
       <span class="product-meta">${clean(p.tag)}</span>
@@ -178,7 +178,7 @@ function card(p) {
 
 function recipeCard(r) {
   return `<article class="recipe-card">
-    <img src="assets/images/${r.id}.svg" loading="lazy" alt="Illustrated ${clean(r.title)} recipe bowl">
+    <img src="assets/images/${r.id}.jpg" loading="lazy" alt="${clean(r.title)} recipe dish">
     <div class="recipe-content">
       <span class="recipe-tag">${clean(r.category)} &middot; ${clean(r.time)}</span>
       <h3>${clean(r.title)}</h3>
@@ -190,7 +190,7 @@ function recipeCard(r) {
 
 function recipeCardDetailed(r) {
   return `<article class="recipe-card" id="${r.id}">
-    <img src="assets/images/${r.id}.svg" loading="lazy" alt="Illustrated ${clean(r.title)} recipe bowl">
+    <img src="assets/images/${r.id}.jpg" loading="lazy" alt="${clean(r.title)} recipe dish">
     <div class="recipe-content">
       <span class="recipe-tag">${clean(r.category)} &middot; ${clean(r.time)}</span>
       <h3>${clean(r.title)}</h3>
@@ -349,7 +349,7 @@ function renderProduct() {
 
   node.innerHTML = `
     <div class="product-detail-image" style="--tile:${p.tile}">
-      <img src="${img(p)}" alt="Illustrated NutriSeeds ${clean(p.name)}">
+      <img src="${img(p)}" alt="NutriSeeds ${clean(p.name)}">
     </div>
     <div class="detail-info">
       <span class="eyebrow">NUTRISEEDS PAKISTAN SELECTION</span>
@@ -508,7 +508,7 @@ function initFinder() {
     r.innerHTML = `
       <span class="eyebrow">STEP 02 / 02 &middot; SUGGESTED FOOD USE</span>
       <div class="finder-result-row">
-        <img src="${img(p)}" alt="Illustrated ${clean(p.name)}">
+        <img src="${img(p)}" alt="NutriSeeds ${clean(p.name)}">
         <div>
           <h3>${clean(p.name)}</h3>
           <p>${clean(c.detail)}</p>

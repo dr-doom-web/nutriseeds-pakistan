@@ -117,3 +117,4 @@ Prior to transitioning this academic prototype into an operational commercial en
    - Standard domestic courier rates within Lahore (Rs. 150–200 per parcel up to 1kg) and nationwide across Pakistan (Rs. 250–350) remain strictly separate from product prices and are marked **"To be confirmed"**.
 4. **Regulatory Licensing:**
    - Registration with the Punjab Food Authority (PFA), batch testing for moisture content, and nutritional facts validation.
+

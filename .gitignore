@@ -5,6 +5,7 @@ nutriseeds-website/
 .DS_Store
 Thumbs.db
 *.log
+*.zip
 .vscode/
 .idea/
 
